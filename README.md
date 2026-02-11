@@ -1,20 +1,13 @@
 # fwd2claw
 
-A Cloudflare Email Worker that forwards incoming emails to [OpenClaw](https://openclaw.ai) webhooks for AI-powered processing. OpenClaw handles the email and responds to the sender via their preferred IM channel.
-
-## How it works
-
-1. Email arrives at your Cloudflare-routed address (e.g. `agent@yourdomain.com`)
-2. The worker parses the email (sender, subject, body, attachment summaries)
-3. Forwards the content to OpenClaw's `/hooks/agent` endpoint
-4. OpenClaw processes the email and replies to the sender on their selected IM
+A Cloudflare Email Worker that forwards incoming emails to [OpenClaw](https://openclaw.ai) webhooks. OpenClaw handles the email and responds to the sender via their preferred IM channel.
 
 ## Setup
 
 ### Prerequisites
 
 - A Cloudflare account with [Email Routing](https://developers.cloudflare.com/email-routing/) enabled on your domain
-- An [OpenClaw](https://openclaw.ai) account with a webhook token
+- An [OpenClaw](https://openclaw.ai) 🦞 with [webhook](https://docs.openclaw.ai/automation/webhook) enabled.
 
 ### Install
 
@@ -45,7 +38,7 @@ pnpm install
 ### Deploy
 
 ```bash
-pnpm push
+pnpm upload
 ```
 
 ### Enable email routing

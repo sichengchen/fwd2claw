@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
-    "push": "wrangler deploy",
+    "upload": "wrangler deploy",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
