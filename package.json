@@ -11,6 +11,22 @@
   "dependencies": {
     "postal-mime": "^2.4.1"
   },
+  "cloudflare": {
+    "bindings": {
+      "OPENCLAW_API_TOKEN": {
+        "description": "Bearer token from your OpenClaw webhook settings."
+      },
+      "OPENCLAW_WEBHOOK_URL": {
+        "description": "Your OpenClaw webhook URL, e.g. https://your-instance.openclaw.ai/hooks/agent"
+      },
+      "ALLOWED_SENDER": {
+        "description": "Email address allowed to trigger the webhook."
+      },
+      "OPENCLAW_CHANNEL": {
+        "description": "IM channel for delivery: last, whatsapp, telegram, discord, slack, mattermost, signal, imessage, msteams."
+      }
+    }
+  },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250205.0",
     "typescript": "^5.7.0",
