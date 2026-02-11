@@ -1,0 +1,9 @@
+name = "fwd2claw"
+main = "src/index.ts"
+compatibility_date = "2025-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+OPENCLAW_WEBHOOK_URL = "https://your-openclaw-instance.example.com/hooks/agent"
+ALLOWED_SENDER = "user@example.com"
+OPENCLAW_CHANNEL = "telegram"

@@ -1,0 +1,19 @@
+{
+  "name": "fwd2claw",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "push": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "postal-mime": "^2.4.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250205.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^4.0.0"
+  }
+}
