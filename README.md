@@ -2,6 +2,10 @@
 
 A Cloudflare Email Worker that forwards incoming emails to [OpenClaw](https://openclaw.ai) webhooks. OpenClaw handles the email and responds to the sender via their preferred IM channel.
 
+## Quick Start
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Fsichengchen%2Ffwd2claw)
+
 ## Setup
 
 ### Prerequisites
